@@ -8,3 +8,7 @@ Program *publisher* ini akan mengirimkan 5 buah data ke *message broker* dalam s
 > The url of "amqp://guest:guest@localhost:5672" is the same as the one in the subscriber program. What does it mean?
 
 Uri yang digunakan pada program *publisher* sama dengan uri yang digunakan dengan program *subscriber* mengartikan bahwa *publisher* akan mem-*publish* *message* nya ke sesi `amqp` yang sama dengan *subscriber*. Hal ini berarti *subscriber* akan dapat melihat *message* yang di-*publish* oleh *publisher*. Jika uri nya tidak sama, *subscriber* tidak akan menerima message dari *publisher* karena *subscriber* meng-*observe* sesi yang berbeda dengan sesi dimana *publisher* mem-*publish* *message-message* nya.
+
+## Images
+Gambar yang memperlihatkan `rabbitmq` berjalan di mesin saya
+![Gambar servis rabbitmq di localhost:15672 mesin saya](./rabbitmq_run.png)
