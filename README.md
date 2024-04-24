@@ -16,3 +16,7 @@ Gambar yang memperlihatkan `rabbitmq` berjalan di mesin saya
 
 Gambar yang memperlihatkan setelah program `publisher` di jalankan, program `subcsriber` mendapatkan pesan yang dikirim. Pada gambar ini, program `publisher` dijalankan 2 kali, sehingga program `subscriber` menerima total 10 *event*.
 ![Gambar publisher mengirimkan event dan subscriber menerimanya](./publisher_send_event.png)
+
+
+Gambar yang memperlihatkan *chart* pada `rabbitmq` yang memiliki beberapa *spike* berbanding lurus dengan waktu dimana saya menjalankan program `publisher` beberapa kali di terminal. Ini berarti *spike* yang terdapat merupakan hasil mem-*publish* *event* dari `publisher`.
+![Gambar spike pada chart yang sejalan dengan waktu dijalankan program publisher](./publisher_chart_spike.png)
