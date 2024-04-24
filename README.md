@@ -12,3 +12,7 @@ Uri yang digunakan pada program *publisher* sama dengan uri yang digunakan denga
 ## Images
 Gambar yang memperlihatkan `rabbitmq` berjalan di mesin saya
 ![Gambar servis rabbitmq di localhost:15672 mesin saya](./rabbitmq_run.png)
+
+
+Gambar yang memperlihatkan setelah program `publisher` di jalankan, program `subcsriber` mendapatkan pesan yang dikirim. Pada gambar ini, program `publisher` dijalankan 2 kali, sehingga program `subscriber` menerima total 10 *event*.
+![Gambar publisher mengirimkan event dan subscriber menerimanya](./publisher_send_event.png)
